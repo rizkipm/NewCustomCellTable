@@ -9,12 +9,12 @@
 import UIKit
 
 class BeritaTableViewCell: UITableViewCell {
-
-    @IBOutlet weak var isiBerita: UILabel!
-    @IBOutlet weak var tanggalBerita: UILabel!
-    @IBOutlet weak var judulBerita: UILabel!
+    @IBOutlet weak var gambarBerita: UIImageView!
+    @IBOutlet weak var labelIsi: UILabel!
+    @IBOutlet weak var labelTanggal: UILabel!
+    
+    @IBOutlet weak var labelJudul: UILabel!
     @IBOutlet weak var labelKategori: UILabel!
-    @IBOutlet weak var imgGambar: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
