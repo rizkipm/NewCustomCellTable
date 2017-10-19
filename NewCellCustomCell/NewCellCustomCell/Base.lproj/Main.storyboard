@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Luz-gf-FCU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Cell Table View Controller-->
+        <scene sceneID="cCs-12-W6p">
+            <objects>
+                <tableViewController id="Luz-gf-FCU" customClass="CustomCellTableViewController" customModule="NewCellCustomCell" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Pjb-1k-7He">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellBerita" rowHeight="204" id="7Jd-Qc-FZZ" customClass="BeritaTableViewCell" customModule="NewCellCustomCell" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="204"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7Jd-Qc-FZZ" id="apW-Rj-NYk">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Kev-jE-kby">
+                                            <rect key="frame" x="15" y="8" width="323" height="188.5"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kemenangan-Umat-Islam-Atas-Mongol-di-Perang-Ain-Jalut copy" translatesAutoresizingMaskIntoConstraints="NO" id="QUU-J6-lti">
+                                                    <rect key="frame" x="0.0" y="0.0" width="323" height="125"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sejarah" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9y-Vs-gs8">
+                                                    <rect key="frame" x="0.0" y="125" width="323" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyh-V9-49E">
+                                                    <rect key="frame" x="0.0" y="141" width="323" height="20.5"/>
+                                                    <string key="text">15 Ramadhan: Kemenangan Umat Islam 
+Read more http://kisahmuslim.com/</string>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" red="0.48331892490386963" green="0.37955504655838013" blue="0.29010635614395142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="22 Juni 2017" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPS-Mt-q3z">
+                                                    <rect key="frame" x="0.0" y="161.5" width="323" height="13"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isi berita" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uvO-l6-9yN">
+                                                    <rect key="frame" x="0.0" y="174.5" width="323" height="14"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="GPS-Mt-q3z" secondAttribute="bottom" constant="14" id="cEl-zf-PbR"/>
+                                                <constraint firstItem="uvO-l6-9yN" firstAttribute="top" secondItem="gyh-V9-49E" secondAttribute="bottom" constant="13" id="kx4-DZ-u4H"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Kev-jE-kby" firstAttribute="top" secondItem="apW-Rj-NYk" secondAttribute="topMargin" id="Lt8-Oj-OxE"/>
+                                        <constraint firstItem="Kev-jE-kby" firstAttribute="leading" secondItem="apW-Rj-NYk" secondAttribute="leadingMargin" constant="7" id="R8o-Yy-1SR"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imgGambar" destination="QUU-J6-lti" id="hVr-il-vpm"/>
+                                    <outlet property="isiBerita" destination="uvO-l6-9yN" id="COJ-xR-puY"/>
+                                    <outlet property="judulBerita" destination="gyh-V9-49E" id="Yp4-1M-KV9"/>
+                                    <outlet property="labelKategori" destination="O9y-Vs-gs8" id="V5r-yH-ypb"/>
+                                    <outlet property="tanggalBerita" destination="GPS-Mt-q3z" id="hIg-h4-Mhx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Luz-gf-FCU" id="qzX-Sj-nLt"/>
+                            <outlet property="delegate" destination="Luz-gf-FCU" id="RkA-Lh-yF9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6F-lB-ekQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922.39999999999998" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Kemenangan-Umat-Islam-Atas-Mongol-di-Perang-Ain-Jalut copy" width="250" height="125"/>
+    </resources>
+</document>
