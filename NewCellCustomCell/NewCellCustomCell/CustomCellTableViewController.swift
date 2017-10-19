@@ -10,6 +10,12 @@ import UIKit
 
 class CustomCellTableViewController: UITableViewController {
     
+    var catSelected:String?
+    var gambarSelected:String?
+    var tglSelected:String?
+    var judulSelected:String?
+    var isiSelected:String?
+    
     let category:[String] = ["Sejarah", "Aqidah", 
                              "Science", "Sejarah", "Islam"]
     let tglData : [String] = ["Minggu/ 22 Oktober 2017", "Senen / 23 Oktober 2017", "Selasa / 25 Oktober 2017", "Rabu / 26 Oktober 2017", "Kamis / 27 Oktober 2017"]
@@ -58,6 +64,40 @@ class CustomCellTableViewController: UITableViewController {
         cell.gambarBerita.image = dataImage
 
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        //mengecek dta yang dikirim
+        print("Row \(indexPath.row)selected")
+        //memasukkan data ke variable namaSelected dan imageSeleted ke masing2 variable nya
+        judulSelected = self.judulBerita[indexPath.row]
+        gambarSelected = self.gambarBerita[indexPath.row]
+        
+        tglSelected = self.tglData[indexPath.row]
+        catSelected = self.category[indexPath.row]
+        isiSelected = isiBerita[indexPath.row]
+        
+        //memanggil segue passDataDetail
+        performSegue(withIdentifier: "detailKisah", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        //mengecek apakah segue nya ada atau tidak
+        if segue.identifier == "detailKisah" {
+            //kondisi ketika segue nya ada
+            //mengirimkan data ke detailViewController
+            let kirimData = segue.destination as! DetailKisahViewController
+            //mengirimkan data ke masing2 variable
+           kirimData.passJudul = judulSelected
+            kirimData.passCat = catSelected
+            kirimData.passTgl = tglSelected
+            kirimData.passIsi = isiSelected
+            kirimData.passGambar = gambarSelected
+            
+            
+        }
     }
     
 

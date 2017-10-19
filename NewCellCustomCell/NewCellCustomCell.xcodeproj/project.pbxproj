@@ -21,6 +21,7 @@
 		9ACC7D8D1F988ED0007D085F /* berita3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC7D881F988ECF007D085F /* berita3.jpg */; };
 		9ACC7D8E1F988ED0007D085F /* berita1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC7D891F988ECF007D085F /* berita1.jpeg */; };
 		9ACC7D8F1F988ED0007D085F /* berita4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9ACC7D8A1F988ECF007D085F /* berita4.jpg */; };
+		9ACC7D911F98F93A007D085F /* DetailKisahViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACC7D901F98F93A007D085F /* DetailKisahViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		9ACC7D881F988ECF007D085F /* berita3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berita3.jpg; sourceTree = "<group>"; };
 		9ACC7D891F988ECF007D085F /* berita1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berita1.jpeg; sourceTree = "<group>"; };
 		9ACC7D8A1F988ECF007D085F /* berita4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = berita4.jpg; sourceTree = "<group>"; };
+		9ACC7D901F98F93A007D085F /* DetailKisahViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailKisahViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +126,7 @@
 				9ACC7D601F9884D9007D085F /* Info.plist */,
 				9ACC7D821F988973007D085F /* CustomCellTableViewController.swift */,
 				9ACC7D841F9889DF007D085F /* BeritaTableViewCell.swift */,
+				9ACC7D901F98F93A007D085F /* DetailKisahViewController.swift */,
 			);
 			path = NewCellCustomCell;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACC7D911F98F93A007D085F /* DetailKisahViewController.swift in Sources */,
 				9ACC7D571F9884D9007D085F /* ViewController.swift in Sources */,
 				9ACC7D831F988973007D085F /* CustomCellTableViewController.swift in Sources */,
 				9ACC7D851F9889DF007D085F /* BeritaTableViewCell.swift in Sources */,
